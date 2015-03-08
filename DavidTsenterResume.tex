@@ -1,0 +1,223 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{DavidTsenterResume}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\namesection{David}{Tsenter}{ \urlstyle{same}\url{http://davidtsenter.com} \\
+\href{mailto:tsenterd@gmail.com}{tsenterd@gmail.com} | 416.358.7950
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{University of Waterloo}
+\descript{In Progress}
+\descript{BSE in Software Engineering}
+\location{Starting September 2015 | Waterloo,ON \\GPA: N/A}
+\sectionsep
+
+\subsection{William Lyon Mackenzie C.I}
+\location{Grad. June 2015|  Toronto, ON}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+\location{Experienced With:}
+\textbullet{}Java \textbullet{}   HTML\textbullet{}CSS \textbullet{} JavaScript\\ \textbullet{} C 
+ \textbullet{} Python \textbullet{} PowerShell \textbullet{}Bash\textbullet{}Android \textbullet{} \LaTeX\ \\ 
+ \vspace{2mm}
+\location{Familiar With:}
+Arduino \textbullet{} C++ \textbullet{} PHP \textbullet{} Assembly \\
+MatLab \textbullet{} Node.js \ \textbullet{} MySQL
+\sectionsep
+\vspace{1mm}
+\subsection{Tools}
+\textbullet{} Git\textbullet{}Android Studio \textbullet{}Eclipse\\
+\textbullet{}Active Directory \textbullet{}Windows Server  \\
+
+\vspace{4mm}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Interests}
+\textbullet{} Hackathons \\
+\textbullet{} Entrepreneurship \\
+\textbullet{} Competitive Programming \\
+\textbullet{} Website Design \\
+\textbullet{} Volunteering\\
+\sectionsep
+\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+Github:// \href{https://github.com/tsenterd}{\custombold{tsenterd}} \\
+Twitter://  \href{https://twitter.com/TsenterDavid}{\custombold{@TsenterDavid}} \\
+LinkedIn://  \href{https://www.linkedin.com/in/davidtsenter}{\custombold{davidtsenter}}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+\runsubsection{Western Learning Academy}
+\descript{| Head Tutor}
+\location{November 2014 – Current | Toronto, ON}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Tutored students from grades 1 through college in a variety of subjects such as
+math, physics, chemistry, and computer science.
+\item In charge of newly opened location
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Kobo Inc.}
+\descript{| Junior Systems Administrator }
+\location{July - September 2013 | Toronto, ON}
+
+\begin{tightemize}\item Developed and deployed the new user account automation script (Active Directory,Exchange) using Windows PowerShell
+\item Assisted in Exchange server migration
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Kobo Inc.}
+\descript{| IT Summer Intern }
+\location{August - September 2012| Toronto, ON}
+\begin{tightemize}
+\item Performed Hardware and Software deployments/upgrades
+\item Assisted remote and local employees with technical issues 
+\item Developed and deployed domain computer encryption script
+
+\end{tightemize}
+\sectionsep
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+\runsubsection{Cornell Robot Learning Lab}
+\descript{| Head Undergrad Research}
+\location{Jan 2014 – Present | Ithaca, NY}
+Worked with \textbf{\href{http://www.cs.cornell.edu/~ashesh/}{Ashesh Jain}} and \textbf{\href{http://www.cs.cornell.edu/~asaxena/}{Prof Ashutosh Saxena}} to create \textbf{PlanIt}, a tool which  learns from large scale user preference feedback to plan robot trajectories in human environments.  Publication submitted.
+\sectionsep
+
+\runsubsection{Cornell Phonetics Lab}
+\descript{| Head Undergraduate Researcher}
+\location{Mar 2012 – May 2013 | Ithaca, NY}
+Lead the development of \textbf{QuickTongue}, the first ever breakthrough tongue-controlled game with \textbf{\href{http://conf.ling.cornell.edu/~tilsen/}{Prof Sam Tilsen}} to aid in Linguistics research. Publication submitted.
+\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%
+\section{ExtraCurriculars}
+\textbullet{} Hackathon President \\
+\textbullet{} Computer Programming Team Vice President \\
+\textbullet{} Filmmaker (Visual Effects) \\
+\textbullet{} North York Food Harvest Volunteer \\
+\sectionsep
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Awards} 
+\begin{tabular}{rll}
+2015	     & 2nd place  & JDCC programming contest\\
+2015     & Top 25 percent& CSMC Math Contest\\
+2014	     & 18th in Ontario  & ECOO programming contest\\
+
+\end{tabular}
+\sectionsep
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
