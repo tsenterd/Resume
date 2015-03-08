@@ -1,0 +1,3 @@
+replace template projects with my stuff
+push this version to website
+figure out a way to auto update 
